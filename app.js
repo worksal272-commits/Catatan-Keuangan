@@ -10,7 +10,7 @@
   var PARAM = new URLSearchParams(location.search);
   var DEMO = PARAM.has('demo');
   var GERAK = !matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var NAMA_TEMA = (window.TEMA && TEMA.nama) || 'Kas Rapi';
+  var NAMA_TEMA = (window.TEMA && TEMA.nama) || 'Catatan Keuangan';
   // ---------- Logo & foto (SATU tempat pengaturan gambar) ----------
   // Avatar diunggah di menu Atur,
   // diperkecil ke GAMBAR.maks px lalu disimpan sebagai dataURL (ikut cadangan .json).
@@ -797,7 +797,7 @@
   $('#alihAkun').addEventListener('click', function () {
     if (sibukAkun) return;
     daftarAkun = !daftarAkun;
-    $('#judulAkun').textContent = daftarAkun ? 'Buat akun Kas Rapi' : 'Masuk ke Kas Rapi';
+    $('#judulAkun').textContent = daftarAkun ? 'Buat akun Catatan Keuangan' : 'Masuk ke Catatan Keuangan';
     $('#kirimAkun').textContent = daftarAkun ? 'Daftar' : 'Masuk';
     $('#alihAkun').textContent = daftarAkun ? 'Sudah punya akun? Masuk' : 'Buat akun baru';
     $('#sandiAkun').autocomplete = daftarAkun ? 'new-password' : 'current-password';
